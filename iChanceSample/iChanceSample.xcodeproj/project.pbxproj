@@ -44,6 +44,7 @@
 		989BB9E4166A7A160042EB08 /* NSString+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E3166A7A160042EB08 /* NSString+ICCategory.m */; };
 		989BB9E7166A7A7D0042EB08 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */; };
 		989BB9EA166A7B7F0042EB08 /* UIImage+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */; };
+		989BB9F3166A7E7B0042EB08 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9F2166A7E7B0042EB08 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,8 @@
 		989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		989BB9E8166A7B7E0042EB08 /* UIImage+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ICCategory.h"; sourceTree = "<group>"; };
 		989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ICCategory.m"; sourceTree = "<group>"; };
+		989BB9F1166A7E7B0042EB08 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		989BB9F2166A7E7B0042EB08 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +146,8 @@
 		989BB94C166A73370042EB08 = {
 			isa = PBXGroup;
 			children = (
-				989BB97C166A746C0042EB08 /* Src */,
 				989BB97A166A74630042EB08 /* Depend */,
+				989BB97C166A746C0042EB08 /* Src */,
 				989BB961166A73380042EB08 /* iChanceSample */,
 				989BB95A166A73380042EB08 /* Frameworks */,
 				989BB958166A73380042EB08 /* Products */,
@@ -178,6 +181,11 @@
 		989BB961166A73380042EB08 /* iChanceSample */ = {
 			isa = PBXGroup;
 			children = (
+				989BB9EC166A7D9C0042EB08 /* Network */,
+				989BB9ED166A7DA60042EB08 /* UI */,
+				989BB9EB166A7D810042EB08 /* Animation */,
+				989BB9EE166A7DB50042EB08 /* Category */,
+				989BB9F0166A7DF70042EB08 /* MainView */,
 				989BB96A166A73380042EB08 /* AppDelegate.h */,
 				989BB96B166A73380042EB08 /* AppDelegate.m */,
 				989BB962166A73380042EB08 /* Supporting Files */,
@@ -211,10 +219,10 @@
 		989BB97C166A746C0042EB08 /* Src */ = {
 			isa = PBXGroup;
 			children = (
-				989BB9DB166A79620042EB08 /* Animation */,
-				989BB9DC166A79620042EB08 /* Category */,
 				989BB9DD166A79620042EB08 /* Network */,
 				989BB9DE166A79620042EB08 /* UI */,
+				989BB9DB166A79620042EB08 /* Animation */,
+				989BB9DC166A79620042EB08 /* Category */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -341,6 +349,43 @@
 			path = ../Src/UI;
 			sourceTree = "<group>";
 		};
+		989BB9EB166A7D810042EB08 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		989BB9EC166A7D9C0042EB08 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		989BB9ED166A7DA60042EB08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		989BB9EE166A7DB50042EB08 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		989BB9F0166A7DF70042EB08 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				989BB9F1166A7E7B0042EB08 /* HomeViewController.h */,
+				989BB9F2166A7E7B0042EB08 /* HomeViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,6 +474,7 @@
 				989BB9E4166A7A160042EB08 /* NSString+ICCategory.m in Sources */,
 				989BB9E7166A7A7D0042EB08 /* UIDevice+Hardware.m in Sources */,
 				989BB9EA166A7B7F0042EB08 /* UIImage+ICCategory.m in Sources */,
+				989BB9F3166A7E7B0042EB08 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
