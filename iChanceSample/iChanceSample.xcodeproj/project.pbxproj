@@ -40,6 +40,10 @@
 		989BB9D1166A74FB0042EB08 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB9D0166A74FB0042EB08 /* CoreLocation.framework */; };
 		989BB9D3166A75070042EB08 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB9D2166A75070042EB08 /* ImageIO.framework */; };
 		989BB9D5166A752A0042EB08 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB9D4166A752A0042EB08 /* MapKit.framework */; };
+		989BB9E1166A79B20042EB08 /* UIColor+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E0166A79B20042EB08 /* UIColor+ICCategory.m */; };
+		989BB9E4166A7A160042EB08 /* NSString+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E3166A7A160042EB08 /* NSString+ICCategory.m */; };
+		989BB9E7166A7A7D0042EB08 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */; };
+		989BB9EA166A7B7F0042EB08 /* UIImage+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +110,14 @@
 		989BB9D0166A74FB0042EB08 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		989BB9D2166A75070042EB08 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		989BB9D4166A752A0042EB08 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		989BB9DF166A79B20042EB08 /* UIColor+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ICCategory.h"; sourceTree = "<group>"; };
+		989BB9E0166A79B20042EB08 /* UIColor+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ICCategory.m"; sourceTree = "<group>"; };
+		989BB9E2166A7A160042EB08 /* NSString+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ICCategory.h"; sourceTree = "<group>"; };
+		989BB9E3166A7A160042EB08 /* NSString+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ICCategory.m"; sourceTree = "<group>"; };
+		989BB9E5166A7A7D0042EB08 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		989BB9E8166A7B7E0042EB08 /* UIImage+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ICCategory.h"; sourceTree = "<group>"; };
+		989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ICCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +211,10 @@
 		989BB97C166A746C0042EB08 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				989BB9DB166A79620042EB08 /* Animation */,
+				989BB9DC166A79620042EB08 /* Category */,
+				989BB9DD166A79620042EB08 /* Network */,
+				989BB9DE166A79620042EB08 /* UI */,
 			);
 			name = Src;
 			sourceTree = "<group>";
@@ -285,6 +301,46 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		989BB9DB166A79620042EB08 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Animation;
+			path = ../Src/Animation;
+			sourceTree = "<group>";
+		};
+		989BB9DC166A79620042EB08 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				989BB9DF166A79B20042EB08 /* UIColor+ICCategory.h */,
+				989BB9E0166A79B20042EB08 /* UIColor+ICCategory.m */,
+				989BB9E2166A7A160042EB08 /* NSString+ICCategory.h */,
+				989BB9E3166A7A160042EB08 /* NSString+ICCategory.m */,
+				989BB9E5166A7A7D0042EB08 /* UIDevice+Hardware.h */,
+				989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */,
+				989BB9E8166A7B7E0042EB08 /* UIImage+ICCategory.h */,
+				989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */,
+			);
+			name = Category;
+			path = ../Src/Category;
+			sourceTree = "<group>";
+		};
+		989BB9DD166A79620042EB08 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			path = ../Src/Network;
+			sourceTree = "<group>";
+		};
+		989BB9DE166A79620042EB08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UI;
+			path = ../Src/UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +425,10 @@
 				989BB9C3166A74890042EB08 /* SDWebImagePrefetcher.m in Sources */,
 				989BB9C4166A74890042EB08 /* UIButton+WebCache.m in Sources */,
 				989BB9C5166A74890042EB08 /* UIImageView+WebCache.m in Sources */,
+				989BB9E1166A79B20042EB08 /* UIColor+ICCategory.m in Sources */,
+				989BB9E4166A7A160042EB08 /* NSString+ICCategory.m in Sources */,
+				989BB9E7166A7A7D0042EB08 /* UIDevice+Hardware.m in Sources */,
+				989BB9EA166A7B7F0042EB08 /* UIImage+ICCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
