@@ -45,6 +45,8 @@
 		989BB9E7166A7A7D0042EB08 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */; };
 		989BB9EA166A7B7F0042EB08 /* UIImage+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */; };
 		989BB9F3166A7E7B0042EB08 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9F2166A7E7B0042EB08 /* HomeViewController.m */; };
+		989BBA01166A8B8E0042EB08 /* NSData+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BBA00166A8B8E0042EB08 /* NSData+ICCategory.m */; };
+		989BBA05166A8C5C0042EB08 /* NSDate+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BBA04166A8C5C0042EB08 /* NSDate+ICCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,10 @@
 		989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ICCategory.m"; sourceTree = "<group>"; };
 		989BB9F1166A7E7B0042EB08 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		989BB9F2166A7E7B0042EB08 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		989BB9FF166A8B8E0042EB08 /* NSData+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ICCategory.h"; sourceTree = "<group>"; };
+		989BBA00166A8B8E0042EB08 /* NSData+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ICCategory.m"; sourceTree = "<group>"; };
+		989BBA03166A8C5C0042EB08 /* NSDate+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ICCategory.h"; sourceTree = "<group>"; };
+		989BBA04166A8C5C0042EB08 /* NSDate+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ICCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +334,10 @@
 				989BB9E6166A7A7D0042EB08 /* UIDevice+Hardware.m */,
 				989BB9E8166A7B7E0042EB08 /* UIImage+ICCategory.h */,
 				989BB9E9166A7B7E0042EB08 /* UIImage+ICCategory.m */,
+				989BB9FF166A8B8E0042EB08 /* NSData+ICCategory.h */,
+				989BBA00166A8B8E0042EB08 /* NSData+ICCategory.m */,
+				989BBA03166A8C5C0042EB08 /* NSDate+ICCategory.h */,
+				989BBA04166A8C5C0042EB08 /* NSDate+ICCategory.m */,
 			);
 			name = Category;
 			path = ../Src/Category;
@@ -475,6 +485,8 @@
 				989BB9E7166A7A7D0042EB08 /* UIDevice+Hardware.m in Sources */,
 				989BB9EA166A7B7F0042EB08 /* UIImage+ICCategory.m in Sources */,
 				989BB9F3166A7E7B0042EB08 /* HomeViewController.m in Sources */,
+				989BBA01166A8B8E0042EB08 /* NSData+ICCategory.m in Sources */,
+				989BBA05166A8C5C0042EB08 /* NSDate+ICCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
