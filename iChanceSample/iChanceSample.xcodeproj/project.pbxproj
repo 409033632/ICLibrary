@@ -28,6 +28,9 @@
 		989BBA05166A8C5C0042EB08 /* NSDate+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BBA04166A8C5C0042EB08 /* NSDate+ICCategory.m */; };
 		989E4D79166B3893006CEE37 /* ICLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4D78166B3893006CEE37 /* ICLabel.m */; };
 		989E4D93166B3AD2006CEE37 /* ICLabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */; };
+		989E4DA2166B4186006CEE37 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4DA1166B4186006CEE37 /* OpenUDID.m */; };
+		989E4DAC166B4421006CEE37 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 989E4DA9166B4421006CEE37 /* SVProgressHUD.bundle */; };
+		989E4DAD166B4421006CEE37 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4DAB166B4421006CEE37 /* SVProgressHUD.m */; };
 		98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
 		98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C862166AEF340023D23F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C864166AEF340023D23F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -93,6 +96,11 @@
 		989E4D91166B3AD1006CEE37 /* ICLabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLabelDemo.h; sourceTree = "<group>"; };
 		989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabelDemo.m; sourceTree = "<group>"; };
 		989E4D9A166B3E6B006CEE37 /* ICTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTools.h; sourceTree = "<group>"; };
+		989E4DA0166B4186006CEE37 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		989E4DA1166B4186006CEE37 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		989E4DA9166B4421006CEE37 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		989E4DAA166B4421006CEE37 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		989E4DAB166B4421006CEE37 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		98B1C813166AE81A0023D23F /* ICZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageView.h; sourceTree = "<group>"; };
 		98B1C814166AE81A0023D23F /* ICZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageView.m; sourceTree = "<group>"; };
 		98B1C861166AEF340023D23F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -239,6 +247,8 @@
 		989BB97A166A74630042EB08 /* Depend */ = {
 			isa = PBXGroup;
 			children = (
+				989E4DA8166B4421006CEE37 /* SVProgressHUD */,
+				989E4D9F166B4186006CEE37 /* OpenUDID */,
 				98B1C860166AEF340023D23F /* AFNetworking */,
 				98B1C874166AEF340023D23F /* JsonKit */,
 				98B1C877166AEF340023D23F /* MBProgressHUD */,
@@ -358,6 +368,27 @@
 				989E4D9A166B3E6B006CEE37 /* ICTools.h */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		989E4D9F166B4186006CEE37 /* OpenUDID */ = {
+			isa = PBXGroup;
+			children = (
+				989E4DA0166B4186006CEE37 /* OpenUDID.h */,
+				989E4DA1166B4186006CEE37 /* OpenUDID.m */,
+			);
+			name = OpenUDID;
+			path = ../Depend/OpenUDID;
+			sourceTree = "<group>";
+		};
+		989E4DA8166B4421006CEE37 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				989E4DA9166B4421006CEE37 /* SVProgressHUD.bundle */,
+				989E4DAA166B4421006CEE37 /* SVProgressHUD.h */,
+				989E4DAB166B4421006CEE37 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			path = ../Depend/SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		98B1C860166AEF340023D23F /* AFNetworking */ = {
@@ -517,6 +548,7 @@
 				989BB966166A73380042EB08 /* InfoPlist.strings in Resources */,
 				98B1C8AC166AF15B0023D23F /* test.jpg in Resources */,
 				98B1C8AE166AF1B40023D23F /* LocalizedString.strings in Resources */,
+				989E4DAC166B4421006CEE37 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +595,8 @@
 				98B1C8B7166AF6070023D23F /* ICZoomableImageViewDemo.m in Sources */,
 				989E4D79166B3893006CEE37 /* ICLabel.m in Sources */,
 				989E4D93166B3AD2006CEE37 /* ICLabelDemo.m in Sources */,
+				989E4DA2166B4186006CEE37 /* OpenUDID.m in Sources */,
+				989E4DAD166B4421006CEE37 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
