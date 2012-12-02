@@ -8,7 +8,7 @@
 
 #import "ICUIViewController.h"
 #import "ICZoomableImageViewDemo.h"
-
+#import "ICLabelDemo.h"
 
 @interface ICUIViewController ()
 
@@ -49,7 +49,7 @@
     self.navigationItem.title = @"UI";
     
     //init data source
-    _dataSource = [[NSArray alloc] initWithObjects:@"ICZoomableImageView",nil];
+    _dataSource = [[NSArray alloc] initWithObjects:@"ICZoomableImageView",@"ICLabel",nil];
     
     
     //add table
@@ -101,6 +101,13 @@
         ICZoomableImageViewDemo *zoomableImageViewDemo = [[ICZoomableImageViewDemo alloc] init];
         [self.navigationController pushViewController:zoomableImageViewDemo animated:YES];
         [zoomableImageViewDemo release];
+    }
+    
+    if (indexPath.row == 1) {
+        //ICLabel
+        ICLabelDemo *icLabelDemo = [[ICLabelDemo alloc] init];
+        [self.navigationController pushViewController:icLabelDemo animated:YES];
+        [icLabelDemo release];
     }
 }
 

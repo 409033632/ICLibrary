@@ -26,6 +26,8 @@
 		989BB9F3166A7E7B0042EB08 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BB9F2166A7E7B0042EB08 /* HomeViewController.m */; };
 		989BBA01166A8B8E0042EB08 /* NSData+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BBA00166A8B8E0042EB08 /* NSData+ICCategory.m */; };
 		989BBA05166A8C5C0042EB08 /* NSDate+ICCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 989BBA04166A8C5C0042EB08 /* NSDate+ICCategory.m */; };
+		989E4D79166B3893006CEE37 /* ICLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4D78166B3893006CEE37 /* ICLabel.m */; };
+		989E4D93166B3AD2006CEE37 /* ICLabelDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */; };
 		98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
 		98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C862166AEF340023D23F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C864166AEF340023D23F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -86,6 +88,10 @@
 		989BBA00166A8B8E0042EB08 /* NSData+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ICCategory.m"; sourceTree = "<group>"; };
 		989BBA03166A8C5C0042EB08 /* NSDate+ICCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ICCategory.h"; sourceTree = "<group>"; };
 		989BBA04166A8C5C0042EB08 /* NSDate+ICCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ICCategory.m"; sourceTree = "<group>"; };
+		989E4D77166B3893006CEE37 /* ICLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLabel.h; sourceTree = "<group>"; };
+		989E4D78166B3893006CEE37 /* ICLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabel.m; sourceTree = "<group>"; };
+		989E4D91166B3AD1006CEE37 /* ICLabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLabelDemo.h; sourceTree = "<group>"; };
+		989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabelDemo.m; sourceTree = "<group>"; };
 		98B1C813166AE81A0023D23F /* ICZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageView.h; sourceTree = "<group>"; };
 		98B1C814166AE81A0023D23F /* ICZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageView.m; sourceTree = "<group>"; };
 		98B1C861166AEF340023D23F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -292,6 +298,8 @@
 			children = (
 				98B1C813166AE81A0023D23F /* ICZoomableImageView.h */,
 				98B1C814166AE81A0023D23F /* ICZoomableImageView.m */,
+				989E4D77166B3893006CEE37 /* ICLabel.h */,
+				989E4D78166B3893006CEE37 /* ICLabel.m */,
 			);
 			name = UI;
 			path = ../Src/UI;
@@ -318,6 +326,8 @@
 				98B1C8B3166AF47D0023D23F /* ICUIViewController.m */,
 				98B1C8B5166AF6070023D23F /* ICZoomableImageViewDemo.h */,
 				98B1C8B6166AF6070023D23F /* ICZoomableImageViewDemo.m */,
+				989E4D91166B3AD1006CEE37 /* ICLabelDemo.h */,
+				989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -541,6 +551,8 @@
 				98B1C8B1166AF3F50023D23F /* ICViewController.m in Sources */,
 				98B1C8B4166AF47D0023D23F /* ICUIViewController.m in Sources */,
 				98B1C8B7166AF6070023D23F /* ICZoomableImageViewDemo.m in Sources */,
+				989E4D79166B3893006CEE37 /* ICLabel.m in Sources */,
+				989E4D93166B3AD2006CEE37 /* ICLabelDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

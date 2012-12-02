@@ -41,6 +41,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.navigationItem.title = @"zoomableImageView";
+    
     ICZoomableImageView *zoomableImageView = [[ICZoomableImageView alloc] initwithImage:[UIImage imageNamed:@"test.jpg"] frame:self.view.bounds];
     zoomableImageView.zoomableImageDelegate = self;
     [self.view addSubview:zoomableImageView];
