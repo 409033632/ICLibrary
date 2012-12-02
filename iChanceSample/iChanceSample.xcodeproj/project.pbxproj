@@ -92,6 +92,7 @@
 		989E4D78166B3893006CEE37 /* ICLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabel.m; sourceTree = "<group>"; };
 		989E4D91166B3AD1006CEE37 /* ICLabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLabelDemo.h; sourceTree = "<group>"; };
 		989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabelDemo.m; sourceTree = "<group>"; };
+		989E4D9A166B3E6B006CEE37 /* ICTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTools.h; sourceTree = "<group>"; };
 		98B1C813166AE81A0023D23F /* ICZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageView.h; sourceTree = "<group>"; };
 		98B1C814166AE81A0023D23F /* ICZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageView.m; sourceTree = "<group>"; };
 		98B1C861166AEF340023D23F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		989BB961166A73380042EB08 /* iChanceSample */ = {
 			isa = PBXGroup;
 			children = (
+				989E4D98166B3E3D006CEE37 /* Tools */,
 				989BB9EC166A7D9C0042EB08 /* Network */,
 				989BB9ED166A7DA60042EB08 /* UI */,
 				989BB9EB166A7D810042EB08 /* Animation */,
@@ -348,6 +350,14 @@
 				989BB9F2166A7E7B0042EB08 /* HomeViewController.m */,
 			);
 			name = MainView;
+			sourceTree = "<group>";
+		};
+		989E4D98166B3E3D006CEE37 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				989E4D9A166B3E6B006CEE37 /* ICTools.h */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		98B1C860166AEF340023D23F /* AFNetworking */ = {
