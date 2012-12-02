@@ -1,21 +1,22 @@
 //
-//  HomeViewController.m
+//  ICUIViewController.m
 //  iChanceSample
 //
 //  Created by Fox on 12-12-2.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "HomeViewController.h"
 #import "ICUIViewController.h"
+#import "ICZoomableImageViewDemo.h"
 
-@interface HomeViewController ()
+
+@interface ICUIViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation ICUIViewController
 
-#pragma mark - Memory mamager
+#pragma mark - Memory manager
 -(void)dealloc
 {
     [_tableView release];
@@ -29,7 +30,7 @@
     [super viewDidUnload];
 }
 
-#pragma mark - UIViewController life cycle
+#pragma mark - UIViewcontroller life cycle
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -39,15 +40,16 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
     //navigation title
-    self.navigationItem.title = @"ICLibrary";
+    self.navigationItem.title = @"UI";
     
     //init data source
-    _dataSource = [[NSArray alloc] initWithObjects:@"Network",@"UI",@"Animation",@"Category", nil];
+    _dataSource = [[NSArray alloc] initWithObjects:@"ICZoomableImageView",nil];
     
     
     //add table
@@ -55,8 +57,6 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
-    
-    
 }
 
 
@@ -78,9 +78,9 @@
     if(cell==nil){
         cell=[[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer]autorelease];
     }
-
+    
     if (indexPath.row < [_dataSource count]) {
-       cell.textLabel.text = [NSString stringWithFormat:@"%@",[_dataSource objectAtIndex:indexPath.row]];    
+        cell.textLabel.text = [NSString stringWithFormat:@"%@",[_dataSource objectAtIndex:indexPath.row]];    
     }
     
     return cell;
@@ -96,15 +96,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 1) {
-        //UI
-        ICUIViewController *uiViewController = [[ICUIViewController alloc] init];
-        [self.navigationController pushViewController:uiViewController animated:YES];
-        [uiViewController release];
+    if (indexPath.row == 0) {
+        //ICZoomableImageView
+        ICZoomableImageViewDemo *zoomableImageViewDemo = [[ICZoomableImageViewDemo alloc] init];
+        [self.navigationController pushViewController:zoomableImageViewDemo animated:YES];
+        [zoomableImageViewDemo release];
     }
 }
-
-
 
 
 @end

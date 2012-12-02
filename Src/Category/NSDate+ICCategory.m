@@ -67,38 +67,38 @@
 	NSTimeInterval diff = now - time;
 	
 	if(diff < 10) {
-		return LocalizedString(@"just now");	
+        return [NSString stringWithFormat:@"刚刚"];
 	} else if(diff < 60) {
-		return LocalizedStringWithFormat(@"%d seconds ago", (int)diff);
+        return [NSString stringWithFormat:@"%d seconds ago",(int)diff];
 	}
 	
 	diff = round(diff/60);
 	if(diff < 60) {
 		if(diff == 1) {
-			return LocalizedStringWithFormat(@"%d minute ago", (int)diff);
+            return [NSString stringWithFormat:@"%d minute ago",(int)diff];
 		} else {
-			return LocalizedStringWithFormat(@"%d minutes ago", (int)diff);
+            return [NSString stringWithFormat:@"%d minutes ago",(int)diff];
 		}
 	}
 	
 	diff = round(diff/60);
 	if(diff < 24) {
 		if(diff == 1) {
-			return LocalizedStringWithFormat(@"%d hour ago", (int)diff);
+            return [NSString stringWithFormat:@"%d hour ago",(int)diff];
 		} else {
-			return LocalizedStringWithFormat(@"%d hours ago", (int)diff);
+            return [NSString stringWithFormat:@"%d hours ago",(int)diff];
 		}
 	}
 	
 	if(diff < 7) {
 		if(diff == 1) {
-			return LocalizedString(@"yesterday");
+			return @"昨天";
 		} else {
-			return LocalizedStringWithFormat(@"%d days ago", (int)diff);
+            return [NSString stringWithFormat:@"%d days ago", (int)diff];
 		}
 	}
 	
-	return [self formattedDateWithFormatString:LocalizedString(@"MM/dd/yy")];
+	return [self formattedDateWithFormatString:@"MM/dd/yy"];
 }	
 
 - (NSString*)formattedDateWithFormatString:(NSString*)dateFormatterString {
@@ -154,7 +154,7 @@
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == 1) {
             // Yesterday
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Yesterday")];
+            return [NSString stringWithString:@"昨天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame) {
             // Day of the week
             return [[formatter weekdaySymbols] objectAtIndex:weekday];
@@ -199,15 +199,15 @@
         if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == 0) {
             // Today
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Today")];
+            return [NSString stringWithString:@"今天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == 1) {
             // Yesterday
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Yesterday")];
+            return [NSString stringWithString:@"昨天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == -1) {
             // Yesterday
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Tomorrow")];
+            return [NSString stringWithString:@"明天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame) {
             // Day of the week
             return [[formatter weekdaySymbols] objectAtIndex:weekday];
@@ -313,15 +313,15 @@
         if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == 0) {
             // Today
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Today")];
+            return [NSString stringWithString:@"今天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == 1) {
             // Yesterday
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Yesterday")];
+            return [NSString stringWithString:@"昨天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame && i == -1) {
             // Tomorrow
             [formatter setDateStyle:NSDateFormatterNoStyle];
-            return [NSString stringWithString:LocalizedString(@"Tomorrow")];
+            return [NSString stringWithString:@"明天"];
         } else if ([suppliedDate compare:referenceDate] == NSOrderedSame) {
             // Day of the week
             return [[formatter weekdaySymbols] objectAtIndex:weekday];
