@@ -21,6 +21,7 @@ ICZoomableImageView
     [zoomableImageView release];
 
 ICLabel
+
      ICLabel *icLabel = [[ICLabel alloc] initWithFrame:CGRectMake(20, 60, 280, 200)];
      [icLabel setFont:[UIFont fontWithName:@"Arial" size:24]];
      [icLabel setBackgroundColor:[UIColor clearColor]];
