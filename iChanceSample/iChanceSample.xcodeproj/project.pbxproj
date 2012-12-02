@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		982BEE58166BABE600F04158 /* FTAnimation+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE50166BABE600F04158 /* FTAnimation+UIView.m */; };
+		982BEE59166BABE600F04158 /* FTAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE53166BABE600F04158 /* FTAnimationManager.m */; };
+		982BEE5A166BABE600F04158 /* FTUtils+NSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE55166BABE600F04158 /* FTUtils+NSObject.m */; };
+		982BEE5B166BABE600F04158 /* FTUtils+UIGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE57166BABE600F04158 /* FTUtils+UIGestureRecognizer.m */; };
+		982BEE60166BACA400F04158 /* ICAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE5F166BACA400F04158 /* ICAnimationViewController.m */; };
+		982BEE66166BAEAA00F04158 /* ICTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE65166BAEAA00F04158 /* ICTableViewController.m */; };
+		982BEE69166BB08000F04158 /* AnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE68166BB08000F04158 /* AnimationDemo.m */; };
 		989BB95C166A73380042EB08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95B166A73380042EB08 /* UIKit.framework */; };
 		989BB95E166A73380042EB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95D166A73380042EB08 /* Foundation.framework */; };
 		989BB960166A73380042EB08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95F166A73380042EB08 /* CoreGraphics.framework */; };
@@ -31,6 +38,7 @@
 		989E4DA2166B4186006CEE37 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4DA1166B4186006CEE37 /* OpenUDID.m */; };
 		989E4DAC166B4421006CEE37 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 989E4DA9166B4421006CEE37 /* SVProgressHUD.bundle */; };
 		989E4DAD166B4421006CEE37 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E4DAB166B4421006CEE37 /* SVProgressHUD.m */; };
+		989E4DC9166B4B70006CEE37 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989E4DC8166B4B6F006CEE37 /* QuartzCore.framework */; };
 		98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
 		98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C862166AEF340023D23F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C864166AEF340023D23F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -61,6 +69,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		982BEE4F166BABE600F04158 /* FTAnimation+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTAnimation+UIView.h"; sourceTree = "<group>"; };
+		982BEE50166BABE600F04158 /* FTAnimation+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTAnimation+UIView.m"; sourceTree = "<group>"; };
+		982BEE51166BABE600F04158 /* FTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAnimation.h; sourceTree = "<group>"; };
+		982BEE52166BABE600F04158 /* FTAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAnimationManager.h; sourceTree = "<group>"; };
+		982BEE53166BABE600F04158 /* FTAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAnimationManager.m; sourceTree = "<group>"; };
+		982BEE54166BABE600F04158 /* FTUtils+NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUtils+NSObject.h"; sourceTree = "<group>"; };
+		982BEE55166BABE600F04158 /* FTUtils+NSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUtils+NSObject.m"; sourceTree = "<group>"; };
+		982BEE56166BABE600F04158 /* FTUtils+UIGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTUtils+UIGestureRecognizer.h"; sourceTree = "<group>"; };
+		982BEE57166BABE600F04158 /* FTUtils+UIGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTUtils+UIGestureRecognizer.m"; sourceTree = "<group>"; };
+		982BEE5D166BAC4F00F04158 /* FTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTUtils.h; sourceTree = "<group>"; };
+		982BEE5E166BACA400F04158 /* ICAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAnimationViewController.h; sourceTree = "<group>"; };
+		982BEE5F166BACA400F04158 /* ICAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAnimationViewController.m; sourceTree = "<group>"; };
+		982BEE64166BAEAA00F04158 /* ICTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTableViewController.h; sourceTree = "<group>"; };
+		982BEE65166BAEAA00F04158 /* ICTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTableViewController.m; sourceTree = "<group>"; };
+		982BEE67166BB08000F04158 /* AnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemo.h; sourceTree = "<group>"; };
+		982BEE68166BB08000F04158 /* AnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemo.m; sourceTree = "<group>"; };
 		989BB957166A73380042EB08 /* iChanceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChanceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989BB95B166A73380042EB08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		989BB95D166A73380042EB08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +125,7 @@
 		989E4DA9166B4421006CEE37 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		989E4DAA166B4421006CEE37 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		989E4DAB166B4421006CEE37 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		989E4DC8166B4B6F006CEE37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		98B1C813166AE81A0023D23F /* ICZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageView.h; sourceTree = "<group>"; };
 		98B1C814166AE81A0023D23F /* ICZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageView.m; sourceTree = "<group>"; };
 		98B1C861166AEF340023D23F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -165,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989E4DC9166B4B70006CEE37 /* QuartzCore.framework in Frameworks */,
 				989BB9D5166A752A0042EB08 /* MapKit.framework in Frameworks */,
 				989BB9D3166A75070042EB08 /* ImageIO.framework in Frameworks */,
 				989BB9D1166A74FB0042EB08 /* CoreLocation.framework in Frameworks */,
@@ -180,6 +206,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		982BEE4E166BABE600F04158 /* FTAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				982BEE5D166BAC4F00F04158 /* FTUtils.h */,
+				982BEE51166BABE600F04158 /* FTAnimation.h */,
+				982BEE52166BABE600F04158 /* FTAnimationManager.h */,
+				982BEE53166BABE600F04158 /* FTAnimationManager.m */,
+				982BEE4F166BABE600F04158 /* FTAnimation+UIView.h */,
+				982BEE50166BABE600F04158 /* FTAnimation+UIView.m */,
+				982BEE54166BABE600F04158 /* FTUtils+NSObject.h */,
+				982BEE55166BABE600F04158 /* FTUtils+NSObject.m */,
+				982BEE56166BABE600F04158 /* FTUtils+UIGestureRecognizer.h */,
+				982BEE57166BABE600F04158 /* FTUtils+UIGestureRecognizer.m */,
+			);
+			name = FTAnimation;
+			path = ../Depend/FTAnimation;
+			sourceTree = "<group>";
+		};
 		989BB94C166A73370042EB08 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +247,7 @@
 		989BB95A166A73380042EB08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				989E4DC8166B4B6F006CEE37 /* QuartzCore.framework */,
 				989BB9D4166A752A0042EB08 /* MapKit.framework */,
 				989BB9D2166A75070042EB08 /* ImageIO.framework */,
 				989BB9D0166A74FB0042EB08 /* CoreLocation.framework */,
@@ -247,6 +292,7 @@
 		989BB97A166A74630042EB08 /* Depend */ = {
 			isa = PBXGroup;
 			children = (
+				982BEE4E166BABE600F04158 /* FTAnimation */,
 				989E4DA8166B4421006CEE37 /* SVProgressHUD */,
 				989E4D9F166B4186006CEE37 /* OpenUDID */,
 				98B1C860166AEF340023D23F /* AFNetworking */,
@@ -312,6 +358,8 @@
 				98B1C814166AE81A0023D23F /* ICZoomableImageView.m */,
 				989E4D77166B3893006CEE37 /* ICLabel.h */,
 				989E4D78166B3893006CEE37 /* ICLabel.m */,
+				982BEE64166BAEAA00F04158 /* ICTableViewController.h */,
+				982BEE65166BAEAA00F04158 /* ICTableViewController.m */,
 			);
 			name = UI;
 			path = ../Src/UI;
@@ -320,6 +368,10 @@
 		989BB9EB166A7D810042EB08 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				982BEE5E166BACA400F04158 /* ICAnimationViewController.h */,
+				982BEE5F166BACA400F04158 /* ICAnimationViewController.m */,
+				982BEE67166BB08000F04158 /* AnimationDemo.h */,
+				982BEE68166BB08000F04158 /* AnimationDemo.m */,
 			);
 			name = Animation;
 			sourceTree = "<group>";
@@ -597,6 +649,13 @@
 				989E4D93166B3AD2006CEE37 /* ICLabelDemo.m in Sources */,
 				989E4DA2166B4186006CEE37 /* OpenUDID.m in Sources */,
 				989E4DAD166B4421006CEE37 /* SVProgressHUD.m in Sources */,
+				982BEE58166BABE600F04158 /* FTAnimation+UIView.m in Sources */,
+				982BEE59166BABE600F04158 /* FTAnimationManager.m in Sources */,
+				982BEE5A166BABE600F04158 /* FTUtils+NSObject.m in Sources */,
+				982BEE5B166BABE600F04158 /* FTUtils+UIGestureRecognizer.m in Sources */,
+				982BEE60166BACA400F04158 /* ICAnimationViewController.m in Sources */,
+				982BEE66166BAEAA00F04158 /* ICTableViewController.m in Sources */,
+				982BEE69166BB08000F04158 /* AnimationDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

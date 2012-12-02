@@ -1,23 +1,20 @@
 //
-//  HomeViewController.m
+//  ICTableViewController.m
 //  iChanceSample
 //
 //  Created by Fox on 12-12-2.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "ICUIViewController.h"
-#import "SVProgressHUD.h"
-#import "ICAnimationViewController.h"
+#import "ICTableViewController.h"
 
-@interface HomeViewController ()
+@interface ICTableViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation ICTableViewController
 
-#pragma mark - Memory mamager
+#pragma mark - Memory manager
 -(void)dealloc
 {
     [_tableView release];
@@ -31,7 +28,7 @@
     [super viewDidUnload];
 }
 
-#pragma mark - UIViewController life cycle
+#pragma mark - UIViewcontroller life cycle
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -41,16 +38,13 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    //navigation title
-    self.navigationItem.title = @"ICLibrary";
     
     //init data source
-    _dataSource = [[NSArray alloc] initWithObjects:@"Network",@"UI",@"Animation",@"Category", nil];
-    
+    _dataSource = [[NSMutableArray alloc] init];
     
     //add table
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -58,7 +52,6 @@
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
 
-    
 }
 
 
@@ -80,11 +73,8 @@
     if(cell==nil){
         cell=[[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer]autorelease];
     }
-
-    if (indexPath.row < [_dataSource count]) {
-       cell.textLabel.text = [NSString stringWithFormat:@"%@",[_dataSource objectAtIndex:indexPath.row]];    
-    }
     
+   
     return cell;
 }
 
@@ -98,24 +88,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 1) {
-        //UI
-        ICUIViewController *uiViewController = [[ICUIViewController alloc] init];
-        [self.navigationController pushViewController:uiViewController animated:YES];
-        [uiViewController release];
-    }
-    
-    if (indexPath.row == 2) {
-        //Animation
-        ICAnimationViewController *animationViewController = [[ICAnimationViewController alloc] init];
-        [self.navigationController pushViewController:animationViewController animated:YES];
-        [animationViewController release];
-        
-    }
-    
+   
 }
-
-
 
 
 @end
