@@ -10,6 +10,8 @@
 #import "ICUIViewController.h"
 #import "SVProgressHUD.h"
 #import "ICAnimationViewController.h"
+#import "ICNetworkViewController.h"
+
 
 @interface HomeViewController ()
 
@@ -98,6 +100,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 0) {
+        //ICNetworkViewController
+        ICNetworkViewController *networkViewController = [[ICNetworkViewController alloc] init];
+        [self.navigationController pushViewController:networkViewController animated:YES];
+        [networkViewController release];
+    }
+    
+    
     if (indexPath.row == 1) {
         //UI
         ICUIViewController *uiViewController = [[ICUIViewController alloc] init];
