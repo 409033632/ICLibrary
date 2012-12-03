@@ -17,14 +17,14 @@
 #pragma mark - Memory manager
 -(void)dealloc
 {
-    [_tableView release];
+    [_pullingRefreshTableView release];
     [_dataSource release];
     [super dealloc];
 }
 
 - (void)viewDidUnload
 {
-    _tableView = nil;
+    _pullingRefreshTableView = nil;
     [super viewDidUnload];
 }
 
@@ -47,10 +47,12 @@
     _dataSource = [[NSMutableArray alloc] init];
     
     //add table
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    [self.view addSubview:_tableView];
+    _pullingRefreshTableView = [[PullingRefreshTableView alloc] initWithFrame:CGRectMake(0, 0, 320, 400) pullingDelegate:self];
+    _pullingRefreshTableView.autoScrollToNextPage = NO;
+    _pullingRefreshTableView.needHeader = YES;
+    _pullingRefreshTableView.delegate = self;
+    _pullingRefreshTableView.dataSource = self;
+    [self.view addSubview:_pullingRefreshTableView];
 
 }
 
@@ -89,6 +91,48 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    
+}
+
+#pragma mark - PullingRefreshTableViewDelegate methods
+- (void)pullingTableViewDidStartRefreshing:(PullingRefreshTableView *)tableView
+{
+    //下拉更新（头部拉动更新）
+    NSLog(@"pullingTableViewDidStartRefreshing");
+
+    [UIView animateWithDuration:5 animations:^(){
+    
+    } completion:^(BOOL finish){
+        [_pullingRefreshTableView tableViewDidFinishedLoading];
+        NSLog(@"tableViewDidFinishedLoading");
+    }];
+    
+}
+
+
+
+- (void)pullingTableViewDidStartLoading:(PullingRefreshTableView *)tableView
+{
+    //上拉更新，拉动尾部更新
+    //Implement this method if headerOnly is false
+    NSLog(@"pullingTableViewDidStartLoading");
+    
+    [UIView animateWithDuration:5 animations:^(){
+        
+    } completion:^(BOOL finish){
+        [_pullingRefreshTableView tableViewDidFinishedLoading];
+        NSLog(@"tableViewDidFinishedLoading");
+    }];
+}
+
+#pragma mark - UISCrollViewDelegate methods
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [_pullingRefreshTableView tableViewDidScroll:scrollView];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [_pullingRefreshTableView tableViewDidEndDragging:scrollView];
 }
 
 

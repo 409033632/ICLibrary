@@ -7,10 +7,12 @@
 //
 
 #import "ICViewController.h"
+#import "PullingRefreshTableView.h"
 
-@interface ICTableViewController : ICViewController <UITableViewDelegate,UITableViewDataSource>
+@interface ICTableViewController : ICViewController <UITableViewDelegate,UITableViewDataSource,
+    PullingRefreshTableViewDelegate,UIScrollViewDelegate>
 {
-    UITableView *_tableView;
+    PullingRefreshTableView *_pullingRefreshTableView;
     
     NSMutableArray *_dataSource;
 }
