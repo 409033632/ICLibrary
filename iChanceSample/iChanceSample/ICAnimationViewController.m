@@ -8,6 +8,7 @@
 
 #import "ICAnimationViewController.h"
 #import "AnimationDemo.h"
+#import "ICSpanlishViewController.h"
 
 @interface ICAnimationViewController ()
 
@@ -46,6 +47,7 @@
     
     //datesource
     [_dataSource addObject:@"FTAnimation"];
+    [_dataSource addObject:@"ICSpanlishView"];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -83,10 +85,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
+        //animation
         AnimationDemo *animationDemo = [[AnimationDemo alloc] init];
         [self.navigationController pushViewController:animationDemo animated:YES];
         [animationDemo release];
     }
+    
+    if (indexPath.row == 1) {
+        //ICSpanlishViewCOntroller
+        ICSpanlishViewController *spanlishViewController = [[ICSpanlishViewController alloc] init];
+        [self.navigationController pushViewController:spanlishViewController animated:YES];
+        [spanlishViewController release];
+    }
+    
 }
 
 
