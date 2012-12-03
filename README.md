@@ -31,7 +31,8 @@ ICLabel
      icLabel.numberOfLines = 4;
      icLabel.text = @"ICLibrary is readlly an good ios library, it include a variety of commonly used controls.";
      [self.view addSubview:icLabel];
-    [icLabel release];
+     [icLabel release];
+     
 
 Category
 =========
