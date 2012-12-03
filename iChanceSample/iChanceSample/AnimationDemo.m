@@ -55,7 +55,7 @@
     //button
     for (int i = 0; i < 7 ; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [button setTitle:[NSString stringWithFormat:@"Animation :%d",i] forState:UIControlStateNormal];
+        [button setTitle:[NSString stringWithFormat:@"Anima:%d",i] forState:UIControlStateNormal];
         [button setFrame:CGRectMake(60 + 75 * (i %3), 280 + 40 * (i / 3), 60, 30)];
         [button addTarget:self 
                    action:@selector(showAnimation:) 
