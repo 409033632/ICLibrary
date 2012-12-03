@@ -67,6 +67,8 @@
 		989EEB96166C502900DCE6D9 /* loading_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 989EEB7D166C502900DCE6D9 /* loading_8.png */; };
 		989EEB97166C502900DCE6D9 /* loading_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 989EEB7E166C502900DCE6D9 /* loading_9.png */; };
 		989EEB98166C502900DCE6D9 /* loading_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 989EEB7F166C502900DCE6D9 /* loading_logo.png */; };
+		989EEBA6166C665400DCE6D9 /* DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EEBA3166C665400DCE6D9 /* DataCache.m */; };
+		989EEBA7166C665400DCE6D9 /* FlowCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EEBA5166C665400DCE6D9 /* FlowCoverView.m */; };
 		98ACBC95166C28AE003D766E /* ICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC94166C28AE003D766E /* ICViewController.m */; };
 		98ACBC9B166C28F7003D766E /* ICUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC9A166C28F7003D766E /* ICUIViewController.m */; };
 		98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
@@ -186,6 +188,10 @@
 		989EEB7D166C502900DCE6D9 /* loading_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_8.png; sourceTree = "<group>"; };
 		989EEB7E166C502900DCE6D9 /* loading_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_9.png; sourceTree = "<group>"; };
 		989EEB7F166C502900DCE6D9 /* loading_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_logo.png; sourceTree = "<group>"; };
+		989EEBA2166C665400DCE6D9 /* DataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCache.h; sourceTree = "<group>"; };
+		989EEBA3166C665400DCE6D9 /* DataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCache.m; sourceTree = "<group>"; };
+		989EEBA4166C665400DCE6D9 /* FlowCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCoverView.h; sourceTree = "<group>"; };
+		989EEBA5166C665400DCE6D9 /* FlowCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCoverView.m; sourceTree = "<group>"; };
 		98ACBC93166C28AE003D766E /* ICViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICViewController.h; sourceTree = "<group>"; };
 		98ACBC94166C28AE003D766E /* ICViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICViewController.m; sourceTree = "<group>"; };
 		98ACBC99166C28F6003D766E /* ICUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUIViewController.h; sourceTree = "<group>"; };
@@ -352,6 +358,7 @@
 		989BB97A166A74630042EB08 /* Depend */ = {
 			isa = PBXGroup;
 			children = (
+				989EEBA1166C665400DCE6D9 /* FlowCover */,
 				989EEB56166C49B000DCE6D9 /* GTMBase64 */,
 				982BEE4E166BABE600F04158 /* FTAnimation */,
 				989E4DA8166B4421006CEE37 /* SVProgressHUD */,
@@ -549,6 +556,18 @@
 				989EEB7F166C502900DCE6D9 /* loading_logo.png */,
 			);
 			path = SpanlishView;
+			sourceTree = "<group>";
+		};
+		989EEBA1166C665400DCE6D9 /* FlowCover */ = {
+			isa = PBXGroup;
+			children = (
+				989EEBA2166C665400DCE6D9 /* DataCache.h */,
+				989EEBA3166C665400DCE6D9 /* DataCache.m */,
+				989EEBA4166C665400DCE6D9 /* FlowCoverView.h */,
+				989EEBA5166C665400DCE6D9 /* FlowCoverView.m */,
+			);
+			name = FlowCover;
+			path = ../Depend/FlowCover;
 			sourceTree = "<group>";
 		};
 		98B1C860166AEF340023D23F /* AFNetworking */ = {
@@ -793,6 +812,8 @@
 				989EEB5A166C49B000DCE6D9 /* GTMBase64.m in Sources */,
 				989EEB5E166C4ACC00DCE6D9 /* ICTabBarController.m in Sources */,
 				989EEB65166C4FD800DCE6D9 /* ICSpanlishViewController.m in Sources */,
+				989EEBA6166C665400DCE6D9 /* DataCache.m in Sources */,
+				989EEBA7166C665400DCE6D9 /* FlowCoverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
