@@ -10,6 +10,10 @@
 #import "AFHTTPClient.h"
 #import "AFNetworkActivityIndicatorManager.h"
 
+
+#import <objc/runtime.h>
+#import <objc/message.h>
+
 @interface ICNetworkViewController ()
 
 @end
@@ -37,25 +41,8 @@
     [super viewDidLoad];
     
     self.title = @"ICNetworkViewController";
-    
 
-    
-    
-#pragma mark - POST 请求(传输的参数为JSON对象)
-    
-
-    
-    
-
-    
-    
-#pragma mark - POST 请求（键值对参数形式）
-    
-    
-
-    
-
-#pragma mark - 下载
+    self.title = NSLocalizedString(@"HelloKey", @"12121");   
 
     
 }

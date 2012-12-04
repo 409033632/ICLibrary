@@ -80,6 +80,7 @@
 		989EEBEC166CC01400DCE6D9 /* ICNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EEBEB166CC01400DCE6D9 /* ICNetworkViewController.m */; };
 		98ACBC95166C28AE003D766E /* ICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC94166C28AE003D766E /* ICViewController.m */; };
 		98ACBC9B166C28F7003D766E /* ICUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC9A166C28F7003D766E /* ICUIViewController.m */; };
+		98AF9630166D867D00E0B9D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AF9632166D867D00E0B9D1 /* Localizable.strings */; };
 		98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
 		98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C862166AEF340023D23F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C864166AEF340023D23F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -103,7 +104,6 @@
 		98B1C8A7166AEF340023D23F /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C891166AEF340023D23F /* UIButton+WebCache.m */; };
 		98B1C8A8166AEF340023D23F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C893166AEF340023D23F /* UIImageView+WebCache.m */; };
 		98B1C8AC166AF15B0023D23F /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98B1C8AB166AF15B0023D23F /* test.jpg */; };
-		98B1C8AE166AF1B40023D23F /* LocalizedString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98B1C8AD166AF1B40023D23F /* LocalizedString.strings */; };
 		98B1C8B7166AF6070023D23F /* ICZoomableImageViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C8B6166AF6070023D23F /* ICZoomableImageViewDemo.m */; };
 /* End PBXBuildFile section */
 
@@ -219,6 +219,8 @@
 		98ACBC94166C28AE003D766E /* ICViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICViewController.m; sourceTree = "<group>"; };
 		98ACBC99166C28F6003D766E /* ICUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUIViewController.h; sourceTree = "<group>"; };
 		98ACBC9A166C28F7003D766E /* ICUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICUIViewController.m; sourceTree = "<group>"; };
+		98AF9631166D867D00E0B9D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98AF9633166D868D00E0B9D1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		98B1C813166AE81A0023D23F /* ICZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageView.h; sourceTree = "<group>"; };
 		98B1C814166AE81A0023D23F /* ICZoomableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageView.m; sourceTree = "<group>"; };
 		98B1C861166AEF340023D23F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
@@ -269,7 +271,6 @@
 		98B1C892166AEF340023D23F /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		98B1C893166AEF340023D23F /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		98B1C8AB166AF15B0023D23F /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
-		98B1C8AD166AF1B40023D23F /* LocalizedString.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LocalizedString.strings; sourceTree = "<group>"; };
 		98B1C8B5166AF6070023D23F /* ICZoomableImageViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageViewDemo.h; sourceTree = "<group>"; };
 		98B1C8B6166AF6070023D23F /* ICZoomableImageViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageViewDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -369,11 +370,11 @@
 		989BB962166A73380042EB08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98AF9632166D867D00E0B9D1 /* Localizable.strings */,
 				989BB963166A73380042EB08 /* iChanceSample-Info.plist */,
 				989BB964166A73380042EB08 /* InfoPlist.strings */,
 				989BB967166A73380042EB08 /* main.m */,
 				989BB969166A73380042EB08 /* iChanceSample-Prefix.pch */,
-				98B1C8AD166AF1B40023D23F /* LocalizedString.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -746,6 +747,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
 			);
 			mainGroup = 989BB94C166A73370042EB08;
 			productRefGroup = 989BB958166A73380042EB08 /* Products */;
@@ -764,7 +766,6 @@
 			files = (
 				989BB966166A73380042EB08 /* InfoPlist.strings in Resources */,
 				98B1C8AC166AF15B0023D23F /* test.jpg in Resources */,
-				98B1C8AE166AF1B40023D23F /* LocalizedString.strings in Resources */,
 				989E4DAC166B4421006CEE37 /* SVProgressHUD.bundle in Resources */,
 				989EEB80166C502900DCE6D9 /* loading_1.png in Resources */,
 				989EEB81166C502900DCE6D9 /* loading_10.png in Resources */,
@@ -795,6 +796,7 @@
 				989EEBB9166C750200DCE6D9 /* blueArrow@2x.png in Resources */,
 				989EEBBA166C750200DCE6D9 /* blueArrowDown.png in Resources */,
 				989EEBBB166C750200DCE6D9 /* blueArrowDown@2x.png in Resources */,
+				98AF9630166D867D00E0B9D1 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +874,15 @@
 				989BB965166A73380042EB08 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		98AF9632166D867D00E0B9D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98AF9631166D867D00E0B9D1 /* en */,
+				98AF9633166D868D00E0B9D1 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
