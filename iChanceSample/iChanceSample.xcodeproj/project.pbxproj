@@ -14,6 +14,7 @@
 		982BEE60166BACA400F04158 /* ICAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE5F166BACA400F04158 /* ICAnimationViewController.m */; };
 		982BEE66166BAEAA00F04158 /* ICTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE65166BAEAA00F04158 /* ICTableViewController.m */; };
 		982BEE69166BB08000F04158 /* AnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE68166BB08000F04158 /* AnimationDemo.m */; };
+		989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B166B166D93AA0000A212 /* ICKeyChainHelper.m */; };
 		989BB95C166A73380042EB08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95B166A73380042EB08 /* UIKit.framework */; };
 		989BB95E166A73380042EB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95D166A73380042EB08 /* Foundation.framework */; };
 		989BB960166A73380042EB08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95F166A73380042EB08 /* CoreGraphics.framework */; };
@@ -124,6 +125,9 @@
 		982BEE65166BAEAA00F04158 /* ICTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTableViewController.m; sourceTree = "<group>"; };
 		982BEE67166BB08000F04158 /* AnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemo.h; sourceTree = "<group>"; };
 		982BEE68166BB08000F04158 /* AnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemo.m; sourceTree = "<group>"; };
+		989B1669166D93770000A212 /* ICTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTools.h; sourceTree = "<group>"; };
+		989B166A166D93AA0000A212 /* ICKeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICKeyChainHelper.h; sourceTree = "<group>"; };
+		989B166B166D93AA0000A212 /* ICKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICKeyChainHelper.m; sourceTree = "<group>"; };
 		989BB957166A73380042EB08 /* iChanceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChanceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989BB95B166A73380042EB08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		989BB95D166A73380042EB08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -158,7 +162,6 @@
 		989E4D78166B3893006CEE37 /* ICLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabel.m; sourceTree = "<group>"; };
 		989E4D91166B3AD1006CEE37 /* ICLabelDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICLabelDemo.h; sourceTree = "<group>"; };
 		989E4D92166B3AD2006CEE37 /* ICLabelDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICLabelDemo.m; sourceTree = "<group>"; };
-		989E4D9A166B3E6B006CEE37 /* ICTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTools.h; sourceTree = "<group>"; };
 		989E4DA0166B4186006CEE37 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		989E4DA1166B4186006CEE37 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		989E4DA9166B4421006CEE37 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -280,11 +283,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989BB9CF166A74F30042EB08 /* Security.framework in Frameworks */,
 				989E4DC9166B4B70006CEE37 /* QuartzCore.framework in Frameworks */,
 				989BB9D5166A752A0042EB08 /* MapKit.framework in Frameworks */,
 				989BB9D3166A75070042EB08 /* ImageIO.framework in Frameworks */,
 				989BB9D1166A74FB0042EB08 /* CoreLocation.framework in Frameworks */,
-				989BB9CF166A74F30042EB08 /* Security.framework in Frameworks */,
 				989BB9CD166A74EB0042EB08 /* SystemConfiguration.framework in Frameworks */,
 				989BB9CB166A74E20042EB08 /* MobileCoreServices.framework in Frameworks */,
 				989BB95C166A73380042EB08 /* UIKit.framework in Frameworks */,
@@ -312,6 +315,17 @@
 			);
 			name = FTAnimation;
 			path = ../Depend/FTAnimation;
+			sourceTree = "<group>";
+		};
+		989B1668166D93770000A212 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				989B1669166D93770000A212 /* ICTools.h */,
+				989B166A166D93AA0000A212 /* ICKeyChainHelper.h */,
+				989B166B166D93AA0000A212 /* ICKeyChainHelper.m */,
+			);
+			name = Tools;
+			path = ../Src/Tools;
 			sourceTree = "<group>";
 		};
 		989BB94C166A73370042EB08 = {
@@ -354,7 +368,6 @@
 		989BB961166A73380042EB08 /* iChanceSample */ = {
 			isa = PBXGroup;
 			children = (
-				989E4D98166B3E3D006CEE37 /* Tools */,
 				989BB9EC166A7D9C0042EB08 /* Network */,
 				989BB9ED166A7DA60042EB08 /* UI */,
 				989BB9EB166A7D810042EB08 /* Animation */,
@@ -399,6 +412,7 @@
 		989BB97C166A746C0042EB08 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				989B1668166D93770000A212 /* Tools */,
 				989BB9DD166A79620042EB08 /* Network */,
 				989BB9DE166A79620042EB08 /* UI */,
 				989BB9DB166A79620042EB08 /* Animation */,
@@ -520,14 +534,6 @@
 				989BB9F2166A7E7B0042EB08 /* HomeViewController.m */,
 			);
 			name = MainView;
-			sourceTree = "<group>";
-		};
-		989E4D98166B3E3D006CEE37 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				989E4D9A166B3E6B006CEE37 /* ICTools.h */,
-			);
-			name = Tools;
 			sourceTree = "<group>";
 		};
 		989E4D9F166B4186006CEE37 /* OpenUDID */ = {
@@ -862,6 +868,7 @@
 				989EEBDE166CA3BA00DCE6D9 /* NSMutableArray+ICCategory.m in Sources */,
 				989EEBE1166CA94200DCE6D9 /* ICCalendarViewDemo.m in Sources */,
 				989EEBEC166CC01400DCE6D9 /* ICNetworkViewController.m in Sources */,
+				989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
