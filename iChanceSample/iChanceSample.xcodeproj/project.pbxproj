@@ -15,6 +15,19 @@
 		982BEE66166BAEAA00F04158 /* ICTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE65166BAEAA00F04158 /* ICTableViewController.m */; };
 		982BEE69166BB08000F04158 /* AnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE68166BB08000F04158 /* AnimationDemo.m */; };
 		989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B166B166D93AA0000A212 /* ICKeyChainHelper.m */; };
+		989B1689166D98DB0000A212 /* AllAroundPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B167C166D98DB0000A212 /* AllAroundPullView.m */; };
+		989B168A166D98DB0000A212 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B167F166D98DB0000A212 /* ioapi.c */; };
+		989B168B166D98DB0000A212 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B1681166D98DB0000A212 /* mztools.c */; };
+		989B168C166D98DB0000A212 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B1683166D98DB0000A212 /* unzip.c */; };
+		989B168D166D98DB0000A212 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B1685166D98DB0000A212 /* zip.c */; };
+		989B168E166D98DB0000A212 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 989B1688166D98DB0000A212 /* ZipArchive.mm */; };
+		989B1693166D9B5B0000A212 /* ICTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1692166D9B5B0000A212 /* ICTapDetectingImageView.m */; };
+		989B1696166D9D220000A212 /* ICTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1695166D9D210000A212 /* ICTapDetectingView.m */; };
+		989B1699166D9F060000A212 /* ICPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1698166D9F060000A212 /* ICPhoto.m */; };
+		989B169C166DA00E0000A212 /* ICPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B169B166DA00D0000A212 /* ICPhotoBrowser.m */; };
+		989B169F166DA1A90000A212 /* ICCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B169E166DA1A80000A212 /* ICCaptionView.m */; };
+		989B16A1166DA3090000A212 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989B16A0166DA3080000A212 /* MessageUI.framework */; };
+		989B16A4166DA42E0000A212 /* ICZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B16A3166DA42C0000A212 /* ICZoomingScrollView.m */; };
 		989BB95C166A73380042EB08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95B166A73380042EB08 /* UIKit.framework */; };
 		989BB95E166A73380042EB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95D166A73380042EB08 /* Foundation.framework */; };
 		989BB960166A73380042EB08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95F166A73380042EB08 /* CoreGraphics.framework */; };
@@ -128,6 +141,33 @@
 		989B1669166D93770000A212 /* ICTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTools.h; sourceTree = "<group>"; };
 		989B166A166D93AA0000A212 /* ICKeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICKeyChainHelper.h; sourceTree = "<group>"; };
 		989B166B166D93AA0000A212 /* ICKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICKeyChainHelper.m; sourceTree = "<group>"; };
+		989B167B166D98DB0000A212 /* AllAroundPullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAroundPullView.h; sourceTree = "<group>"; };
+		989B167C166D98DB0000A212 /* AllAroundPullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAroundPullView.m; sourceTree = "<group>"; };
+		989B167E166D98DB0000A212 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		989B167F166D98DB0000A212 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		989B1680166D98DB0000A212 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		989B1681166D98DB0000A212 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		989B1682166D98DB0000A212 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		989B1683166D98DB0000A212 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		989B1684166D98DB0000A212 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		989B1685166D98DB0000A212 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		989B1686166D98DB0000A212 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		989B1687166D98DB0000A212 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		989B1688166D98DB0000A212 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		989B1690166D9A650000A212 /* ICPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoProtocol.h; sourceTree = "<group>"; };
+		989B1691166D9B5B0000A212 /* ICTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTapDetectingImageView.h; sourceTree = "<group>"; };
+		989B1692166D9B5B0000A212 /* ICTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTapDetectingImageView.m; sourceTree = "<group>"; };
+		989B1694166D9D210000A212 /* ICTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTapDetectingView.h; sourceTree = "<group>"; };
+		989B1695166D9D210000A212 /* ICTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTapDetectingView.m; sourceTree = "<group>"; };
+		989B1697166D9F060000A212 /* ICPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhoto.h; sourceTree = "<group>"; };
+		989B1698166D9F060000A212 /* ICPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhoto.m; sourceTree = "<group>"; };
+		989B169A166DA00C0000A212 /* ICPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoBrowser.h; sourceTree = "<group>"; };
+		989B169B166DA00D0000A212 /* ICPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICPhotoBrowser.m; sourceTree = "<group>"; };
+		989B169D166DA1A60000A212 /* ICCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICCaptionView.h; sourceTree = "<group>"; };
+		989B169E166DA1A80000A212 /* ICCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICCaptionView.m; sourceTree = "<group>"; };
+		989B16A0166DA3080000A212 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		989B16A2166DA42A0000A212 /* ICZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomingScrollView.h; sourceTree = "<group>"; };
+		989B16A3166DA42C0000A212 /* ICZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomingScrollView.m; sourceTree = "<group>"; };
 		989BB957166A73380042EB08 /* iChanceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChanceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989BB95B166A73380042EB08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		989BB95D166A73380042EB08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -283,6 +323,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989B16A1166DA3090000A212 /* MessageUI.framework in Frameworks */,
 				989BB9CF166A74F30042EB08 /* Security.framework in Frameworks */,
 				989E4DC9166B4B70006CEE37 /* QuartzCore.framework in Frameworks */,
 				989BB9D5166A752A0042EB08 /* MapKit.framework in Frameworks */,
@@ -328,6 +369,55 @@
 			path = ../Src/Tools;
 			sourceTree = "<group>";
 		};
+		989B167A166D98DB0000A212 /* AllAroundPullView */ = {
+			isa = PBXGroup;
+			children = (
+				989B167B166D98DB0000A212 /* AllAroundPullView.h */,
+				989B167C166D98DB0000A212 /* AllAroundPullView.m */,
+			);
+			name = AllAroundPullView;
+			path = ../Depend/AllAroundPullView;
+			sourceTree = "<group>";
+		};
+		989B167D166D98DB0000A212 /* ZIPArchive */ = {
+			isa = PBXGroup;
+			children = (
+				989B167E166D98DB0000A212 /* crypt.h */,
+				989B167F166D98DB0000A212 /* ioapi.c */,
+				989B1680166D98DB0000A212 /* ioapi.h */,
+				989B1681166D98DB0000A212 /* mztools.c */,
+				989B1682166D98DB0000A212 /* mztools.h */,
+				989B1683166D98DB0000A212 /* unzip.c */,
+				989B1684166D98DB0000A212 /* unzip.h */,
+				989B1685166D98DB0000A212 /* zip.c */,
+				989B1686166D98DB0000A212 /* zip.h */,
+				989B1687166D98DB0000A212 /* ZipArchive.h */,
+				989B1688166D98DB0000A212 /* ZipArchive.mm */,
+			);
+			name = ZIPArchive;
+			path = ../Depend/ZIPArchive;
+			sourceTree = "<group>";
+		};
+		989B168F166D99F30000A212 /* ICPhotoBrower */ = {
+			isa = PBXGroup;
+			children = (
+				989B1690166D9A650000A212 /* ICPhotoProtocol.h */,
+				989B1694166D9D210000A212 /* ICTapDetectingView.h */,
+				989B1695166D9D210000A212 /* ICTapDetectingView.m */,
+				989B1691166D9B5B0000A212 /* ICTapDetectingImageView.h */,
+				989B1692166D9B5B0000A212 /* ICTapDetectingImageView.m */,
+				989B169D166DA1A60000A212 /* ICCaptionView.h */,
+				989B169E166DA1A80000A212 /* ICCaptionView.m */,
+				989B16A2166DA42A0000A212 /* ICZoomingScrollView.h */,
+				989B16A3166DA42C0000A212 /* ICZoomingScrollView.m */,
+				989B1697166D9F060000A212 /* ICPhoto.h */,
+				989B1698166D9F060000A212 /* ICPhoto.m */,
+				989B169A166DA00C0000A212 /* ICPhotoBrowser.h */,
+				989B169B166DA00D0000A212 /* ICPhotoBrowser.m */,
+			);
+			name = ICPhotoBrower;
+			sourceTree = "<group>";
+		};
 		989BB94C166A73370042EB08 = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +441,7 @@
 		989BB95A166A73380042EB08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				989B16A0166DA3080000A212 /* MessageUI.framework */,
 				989E4DC8166B4B6F006CEE37 /* QuartzCore.framework */,
 				989BB9D4166A752A0042EB08 /* MapKit.framework */,
 				989BB9D2166A75070042EB08 /* ImageIO.framework */,
@@ -395,6 +486,8 @@
 		989BB97A166A74630042EB08 /* Depend */ = {
 			isa = PBXGroup;
 			children = (
+				989B167A166D98DB0000A212 /* AllAroundPullView */,
+				989B167D166D98DB0000A212 /* ZIPArchive */,
 				989EEBB1166C750200DCE6D9 /* PullingRefreshTableView */,
 				989EEB56166C49B000DCE6D9 /* GTMBase64 */,
 				982BEE4E166BABE600F04158 /* FTAnimation */,
@@ -468,6 +561,7 @@
 		989BB9DE166A79620042EB08 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				989B168F166D99F30000A212 /* ICPhotoBrower */,
 				989E4D77166B3893006CEE37 /* ICLabel.h */,
 				989E4D78166B3893006CEE37 /* ICLabel.m */,
 				982BEE64166BAEAA00F04158 /* ICTableViewController.h */,
@@ -869,6 +963,18 @@
 				989EEBE1166CA94200DCE6D9 /* ICCalendarViewDemo.m in Sources */,
 				989EEBEC166CC01400DCE6D9 /* ICNetworkViewController.m in Sources */,
 				989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */,
+				989B1689166D98DB0000A212 /* AllAroundPullView.m in Sources */,
+				989B168A166D98DB0000A212 /* ioapi.c in Sources */,
+				989B168B166D98DB0000A212 /* mztools.c in Sources */,
+				989B168C166D98DB0000A212 /* unzip.c in Sources */,
+				989B168D166D98DB0000A212 /* zip.c in Sources */,
+				989B168E166D98DB0000A212 /* ZipArchive.mm in Sources */,
+				989B1693166D9B5B0000A212 /* ICTapDetectingImageView.m in Sources */,
+				989B1696166D9D220000A212 /* ICTapDetectingView.m in Sources */,
+				989B1699166D9F060000A212 /* ICPhoto.m in Sources */,
+				989B169C166DA00E0000A212 /* ICPhotoBrowser.m in Sources */,
+				989B169F166DA1A90000A212 /* ICCaptionView.m in Sources */,
+				989B16A4166DA42E0000A212 /* ICZoomingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
