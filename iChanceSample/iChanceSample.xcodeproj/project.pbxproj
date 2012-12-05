@@ -16,18 +16,7 @@
 		982BEE69166BB08000F04158 /* AnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE68166BB08000F04158 /* AnimationDemo.m */; };
 		989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B166B166D93AA0000A212 /* ICKeyChainHelper.m */; };
 		989B1689166D98DB0000A212 /* AllAroundPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B167C166D98DB0000A212 /* AllAroundPullView.m */; };
-		989B168A166D98DB0000A212 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B167F166D98DB0000A212 /* ioapi.c */; };
-		989B168B166D98DB0000A212 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B1681166D98DB0000A212 /* mztools.c */; };
-		989B168C166D98DB0000A212 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B1683166D98DB0000A212 /* unzip.c */; };
-		989B168D166D98DB0000A212 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 989B1685166D98DB0000A212 /* zip.c */; };
-		989B168E166D98DB0000A212 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 989B1688166D98DB0000A212 /* ZipArchive.mm */; };
-		989B1693166D9B5B0000A212 /* ICTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1692166D9B5B0000A212 /* ICTapDetectingImageView.m */; };
-		989B1696166D9D220000A212 /* ICTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1695166D9D210000A212 /* ICTapDetectingView.m */; };
-		989B1699166D9F060000A212 /* ICPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1698166D9F060000A212 /* ICPhoto.m */; };
-		989B169C166DA00E0000A212 /* ICPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B169B166DA00D0000A212 /* ICPhotoBrowser.m */; };
-		989B169F166DA1A90000A212 /* ICCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B169E166DA1A80000A212 /* ICCaptionView.m */; };
 		989B16A1166DA3090000A212 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989B16A0166DA3080000A212 /* MessageUI.framework */; };
-		989B16A4166DA42E0000A212 /* ICZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B16A3166DA42C0000A212 /* ICZoomingScrollView.m */; };
 		989BB95C166A73380042EB08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95B166A73380042EB08 /* UIKit.framework */; };
 		989BB95E166A73380042EB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95D166A73380042EB08 /* Foundation.framework */; };
 		989BB960166A73380042EB08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989BB95F166A73380042EB08 /* CoreGraphics.framework */; };
@@ -95,7 +84,6 @@
 		98ACBC95166C28AE003D766E /* ICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC94166C28AE003D766E /* ICViewController.m */; };
 		98ACBC9B166C28F7003D766E /* ICUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC9A166C28F7003D766E /* ICUIViewController.m */; };
 		98AF9630166D867D00E0B9D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AF9632166D867D00E0B9D1 /* Localizable.strings */; };
-		98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
 		98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C862166AEF340023D23F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C864166AEF340023D23F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C896166AEF340023D23F /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C866166AEF340023D23F /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -119,6 +107,14 @@
 		98B1C8A8166AEF340023D23F /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C893166AEF340023D23F /* UIImageView+WebCache.m */; };
 		98B1C8AC166AF15B0023D23F /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98B1C8AB166AF15B0023D23F /* test.jpg */; };
 		98B1C8B7166AF6070023D23F /* ICZoomableImageViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C8B6166AF6070023D23F /* ICZoomableImageViewDemo.m */; };
+		98B43E0B166ED44900998685 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B43E0A166ED44900998685 /* Default-568h@2x.png */; };
+		98E56232166E209E0098E355 /* ICTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1695166D9D210000A212 /* ICTapDetectingView.m */; };
+		98E56233166E209E0098E355 /* ICTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1692166D9B5B0000A212 /* ICTapDetectingImageView.m */; };
+		98E56234166E209E0098E355 /* ICCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B169E166DA1A80000A212 /* ICCaptionView.m */; };
+		98E56235166E209E0098E355 /* ICZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B16A3166DA42C0000A212 /* ICZoomingScrollView.m */; };
+		98E56236166E209E0098E355 /* ICPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B1698166D9F060000A212 /* ICPhoto.m */; };
+		98E56237166E209E0098E355 /* ICPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B169B166DA00D0000A212 /* ICPhotoBrowser.m */; };
+		98E56238166E209E0098E355 /* ICZoomableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C814166AE81A0023D23F /* ICZoomableImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,17 +139,6 @@
 		989B166B166D93AA0000A212 /* ICKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICKeyChainHelper.m; sourceTree = "<group>"; };
 		989B167B166D98DB0000A212 /* AllAroundPullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAroundPullView.h; sourceTree = "<group>"; };
 		989B167C166D98DB0000A212 /* AllAroundPullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAroundPullView.m; sourceTree = "<group>"; };
-		989B167E166D98DB0000A212 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		989B167F166D98DB0000A212 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		989B1680166D98DB0000A212 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		989B1681166D98DB0000A212 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		989B1682166D98DB0000A212 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		989B1683166D98DB0000A212 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		989B1684166D98DB0000A212 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		989B1685166D98DB0000A212 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		989B1686166D98DB0000A212 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		989B1687166D98DB0000A212 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		989B1688166D98DB0000A212 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 		989B1690166D9A650000A212 /* ICPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICPhotoProtocol.h; sourceTree = "<group>"; };
 		989B1691166D9B5B0000A212 /* ICTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTapDetectingImageView.h; sourceTree = "<group>"; };
 		989B1692166D9B5B0000A212 /* ICTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTapDetectingImageView.m; sourceTree = "<group>"; };
@@ -316,6 +301,7 @@
 		98B1C8AB166AF15B0023D23F /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		98B1C8B5166AF6070023D23F /* ICZoomableImageViewDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageViewDemo.h; sourceTree = "<group>"; };
 		98B1C8B6166AF6070023D23F /* ICZoomableImageViewDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICZoomableImageViewDemo.m; sourceTree = "<group>"; };
+		98B43E0A166ED44900998685 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,25 +365,6 @@
 			path = ../Depend/AllAroundPullView;
 			sourceTree = "<group>";
 		};
-		989B167D166D98DB0000A212 /* ZIPArchive */ = {
-			isa = PBXGroup;
-			children = (
-				989B167E166D98DB0000A212 /* crypt.h */,
-				989B167F166D98DB0000A212 /* ioapi.c */,
-				989B1680166D98DB0000A212 /* ioapi.h */,
-				989B1681166D98DB0000A212 /* mztools.c */,
-				989B1682166D98DB0000A212 /* mztools.h */,
-				989B1683166D98DB0000A212 /* unzip.c */,
-				989B1684166D98DB0000A212 /* unzip.h */,
-				989B1685166D98DB0000A212 /* zip.c */,
-				989B1686166D98DB0000A212 /* zip.h */,
-				989B1687166D98DB0000A212 /* ZipArchive.h */,
-				989B1688166D98DB0000A212 /* ZipArchive.mm */,
-			);
-			name = ZIPArchive;
-			path = ../Depend/ZIPArchive;
-			sourceTree = "<group>";
-		};
 		989B168F166D99F30000A212 /* ICPhotoBrower */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +388,7 @@
 		989BB94C166A73370042EB08 = {
 			isa = PBXGroup;
 			children = (
+				98B43E0A166ED44900998685 /* Default-568h@2x.png */,
 				98B1C8A9166AF0EB0023D23F /* Resouce */,
 				989BB97A166A74630042EB08 /* Depend */,
 				989BB97C166A746C0042EB08 /* Src */,
@@ -487,7 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				989B167A166D98DB0000A212 /* AllAroundPullView */,
-				989B167D166D98DB0000A212 /* ZIPArchive */,
 				989EEBB1166C750200DCE6D9 /* PullingRefreshTableView */,
 				989EEB56166C49B000DCE6D9 /* GTMBase64 */,
 				982BEE4E166BABE600F04158 /* FTAnimation */,
@@ -897,6 +864,7 @@
 				989EEBBA166C750200DCE6D9 /* blueArrowDown.png in Resources */,
 				989EEBBB166C750200DCE6D9 /* blueArrowDown@2x.png in Resources */,
 				98AF9630166D867D00E0B9D1 /* Localizable.strings in Resources */,
+				98B43E0B166ED44900998685 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +875,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E56232166E209E0098E355 /* ICTapDetectingView.m in Sources */,
+				98E56233166E209E0098E355 /* ICTapDetectingImageView.m in Sources */,
+				98E56234166E209E0098E355 /* ICCaptionView.m in Sources */,
+				98E56235166E209E0098E355 /* ICZoomingScrollView.m in Sources */,
+				98E56236166E209E0098E355 /* ICPhoto.m in Sources */,
+				98E56237166E209E0098E355 /* ICPhotoBrowser.m in Sources */,
+				98E56238166E209E0098E355 /* ICZoomableImageView.m in Sources */,
 				989BB968166A73380042EB08 /* main.m in Sources */,
 				989BB96C166A73380042EB08 /* AppDelegate.m in Sources */,
 				989BB9E1166A79B20042EB08 /* UIColor+ICCategory.m in Sources */,
@@ -916,7 +891,6 @@
 				989BB9F3166A7E7B0042EB08 /* HomeViewController.m in Sources */,
 				989BBA01166A8B8E0042EB08 /* NSData+ICCategory.m in Sources */,
 				989BBA05166A8C5C0042EB08 /* NSDate+ICCategory.m in Sources */,
-				98B1C815166AE81A0023D23F /* ICZoomableImageView.m in Sources */,
 				98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */,
 				98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */,
 				98B1C896166AEF340023D23F /* AFImageRequestOperation.m in Sources */,
@@ -964,17 +938,6 @@
 				989EEBEC166CC01400DCE6D9 /* ICNetworkViewController.m in Sources */,
 				989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */,
 				989B1689166D98DB0000A212 /* AllAroundPullView.m in Sources */,
-				989B168A166D98DB0000A212 /* ioapi.c in Sources */,
-				989B168B166D98DB0000A212 /* mztools.c in Sources */,
-				989B168C166D98DB0000A212 /* unzip.c in Sources */,
-				989B168D166D98DB0000A212 /* zip.c in Sources */,
-				989B168E166D98DB0000A212 /* ZipArchive.mm in Sources */,
-				989B1693166D9B5B0000A212 /* ICTapDetectingImageView.m in Sources */,
-				989B1696166D9D220000A212 /* ICTapDetectingView.m in Sources */,
-				989B1699166D9F060000A212 /* ICPhoto.m in Sources */,
-				989B169C166DA00E0000A212 /* ICPhotoBrowser.m in Sources */,
-				989B169F166DA1A90000A212 /* ICCaptionView.m in Sources */,
-				989B16A4166DA42E0000A212 /* ICZoomingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -140,7 +140,6 @@ caption = _caption;
             self.underlyingImage = [[[UIImage alloc] initWithData:data] autorelease];
         } else {
             self.underlyingImage = nil;
-            DLog(@"Photo from file error: %@", error);
         }
     } @catch (NSException *exception) {
     } @finally {
@@ -180,7 +179,6 @@ caption = _caption;
 // Called on main
 - (void)webImageManager:(SDWebImageManager *)imageManager didFailWithError:(NSError *)error {
     self.underlyingImage = nil;
-    MWLog(@"SDWebImage failed to download image: %@", error);
     [self imageDidFinishLoadingSoDecompress];
 }
 
