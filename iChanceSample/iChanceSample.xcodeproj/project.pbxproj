@@ -14,6 +14,7 @@
 		982BEE60166BACA400F04158 /* ICAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE5F166BACA400F04158 /* ICAnimationViewController.m */; };
 		982BEE66166BAEAA00F04158 /* ICTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE65166BAEAA00F04158 /* ICTableViewController.m */; };
 		982BEE69166BB08000F04158 /* AnimationDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 982BEE68166BB08000F04158 /* AnimationDemo.m */; };
+		982DFA2816702DB40058D58A /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 982DFA2716702DB40058D58A /* XMLReader.m */; };
 		989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B166B166D93AA0000A212 /* ICKeyChainHelper.m */; };
 		989B1689166D98DB0000A212 /* AllAroundPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989B167C166D98DB0000A212 /* AllAroundPullView.m */; };
 		989B16A1166DA3090000A212 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989B16A0166DA3080000A212 /* MessageUI.framework */; };
@@ -83,6 +84,7 @@
 		989EEBEC166CC01400DCE6D9 /* ICNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EEBEB166CC01400DCE6D9 /* ICNetworkViewController.m */; };
 		98ACBC95166C28AE003D766E /* ICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC94166C28AE003D766E /* ICViewController.m */; };
 		98ACBC9B166C28F7003D766E /* ICUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98ACBC9A166C28F7003D766E /* ICUIViewController.m */; };
+		98AE4338166FB69100770648 /* CommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AE4337166FB69100770648 /* CommonHelper.m */; };
 		98AF9630166D867D00E0B9D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98AF9632166D867D00E0B9D1 /* Localizable.strings */; };
 		98B1C894166AEF340023D23F /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C862166AEF340023D23F /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		98B1C895166AEF340023D23F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B1C864166AEF340023D23F /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -134,6 +136,8 @@
 		982BEE65166BAEAA00F04158 /* ICTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICTableViewController.m; sourceTree = "<group>"; };
 		982BEE67166BB08000F04158 /* AnimationDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDemo.h; sourceTree = "<group>"; };
 		982BEE68166BB08000F04158 /* AnimationDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDemo.m; sourceTree = "<group>"; };
+		982DFA2616702DB40058D58A /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		982DFA2716702DB40058D58A /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		989B1669166D93770000A212 /* ICTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICTools.h; sourceTree = "<group>"; };
 		989B166A166D93AA0000A212 /* ICKeyChainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICKeyChainHelper.h; sourceTree = "<group>"; };
 		989B166B166D93AA0000A212 /* ICKeyChainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICKeyChainHelper.m; sourceTree = "<group>"; };
@@ -247,6 +251,9 @@
 		98ACBC94166C28AE003D766E /* ICViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICViewController.m; sourceTree = "<group>"; };
 		98ACBC99166C28F6003D766E /* ICUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUIViewController.h; sourceTree = "<group>"; };
 		98ACBC9A166C28F7003D766E /* ICUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICUIViewController.m; sourceTree = "<group>"; };
+		98AE4332166FB54900770648 /* AppSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSession.h; sourceTree = "<group>"; };
+		98AE4336166FB69100770648 /* CommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHelper.h; sourceTree = "<group>"; };
+		98AE4337166FB69100770648 /* CommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonHelper.m; sourceTree = "<group>"; };
 		98AF9631166D867D00E0B9D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98AF9633166D868D00E0B9D1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		98B1C813166AE81A0023D23F /* ICZoomableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICZoomableImageView.h; sourceTree = "<group>"; };
@@ -348,6 +355,8 @@
 			isa = PBXGroup;
 			children = (
 				989B1669166D93770000A212 /* ICTools.h */,
+				982DFA2616702DB40058D58A /* XMLReader.h */,
+				982DFA2716702DB40058D58A /* XMLReader.m */,
 				989B166A166D93AA0000A212 /* ICKeyChainHelper.h */,
 				989B166B166D93AA0000A212 /* ICKeyChainHelper.m */,
 			);
@@ -432,6 +441,7 @@
 				989BB9EB166A7D810042EB08 /* Animation */,
 				989BB9EE166A7DB50042EB08 /* Category */,
 				989BB9F0166A7DF70042EB08 /* MainView */,
+				98AE4332166FB54900770648 /* AppSession.h */,
 				989BB96A166A73380042EB08 /* AppDelegate.h */,
 				989BB96B166A73380042EB08 /* AppDelegate.m */,
 				989BB962166A73380042EB08 /* Supporting Files */,
@@ -472,6 +482,7 @@
 		989BB97C166A746C0042EB08 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				98AE4335166FB66400770648 /* Helper */,
 				989B1668166D93770000A212 /* Tools */,
 				989BB9DD166A79620042EB08 /* Network */,
 				989BB9DE166A79620042EB08 /* UI */,
@@ -673,6 +684,16 @@
 			);
 			name = PullingRefreshTableView;
 			path = ../Depend/PullingRefreshTableView;
+			sourceTree = "<group>";
+		};
+		98AE4335166FB66400770648 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				98AE4336166FB69100770648 /* CommonHelper.h */,
+				98AE4337166FB69100770648 /* CommonHelper.m */,
+			);
+			name = Helper;
+			path = ../Src/Helper;
 			sourceTree = "<group>";
 		};
 		98B1C860166AEF340023D23F /* AFNetworking */ = {
@@ -938,6 +959,8 @@
 				989EEBEC166CC01400DCE6D9 /* ICNetworkViewController.m in Sources */,
 				989B166C166D93AA0000A212 /* ICKeyChainHelper.m in Sources */,
 				989B1689166D98DB0000A212 /* AllAroundPullView.m in Sources */,
+				98AE4338166FB69100770648 /* CommonHelper.m in Sources */,
+				982DFA2816702DB40058D58A /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
