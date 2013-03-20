@@ -31,6 +31,9 @@
     self.window.rootViewController = navigation;
     [navigation release];
     
+    
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

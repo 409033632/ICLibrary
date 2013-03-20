@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #define kPROffsetY 60.f
-#define kPRMargin 5.f
+#define kPRMargin  5.f
 #define kPRLabelHeight 20.f
 #define kPRLabelWidth 100.f
 #define kPRArrowWidth 20.f  
@@ -34,7 +34,7 @@
 - (id)initWithFrame:(CGRect)frame atTop:(BOOL)top {
     self = [super initWithFrame:frame];
     if (self) {
-        //Default is at top
+        //默认在顶部
         self.atTop = top;
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         self.backgroundColor = kPRBGColor;
@@ -42,7 +42,7 @@
         UIFont *ft = [UIFont systemFontOfSize:12.f];
         
         //状态标签
-        _stateLabel = [[UILabel alloc] init ];
+        _stateLabel = [[UILabel alloc] init];
         _stateLabel.font = ft;
         _stateLabel.textColor = kTextColor;
         _stateLabel.textAlignment = UITextAlignmentCenter;
@@ -271,7 +271,10 @@
         [self addSubview:_footerView];
         
         //kvo 对contentSize添加监听
-        [self addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
+        [self addObserver:self
+               forKeyPath:@"contentSize"
+                  options:NSKeyValueObservingOptionNew
+                  context:nil];
         
         self.needHeader=YES;
     }

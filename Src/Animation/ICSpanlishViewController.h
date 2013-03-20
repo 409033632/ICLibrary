@@ -6,11 +6,11 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 
 @protocol ICSpanlishDelegate;
 
-@interface ICSpanlishViewController : ICViewController
+@interface ICSpanlishViewController : ICBaseViewController
 {
     id<ICSpanlishDelegate> delegate;
 }

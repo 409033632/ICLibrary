@@ -19,29 +19,28 @@
 #import <UIKit/UIKit.h>
 
 typedef enum {
-    kPRStateNormal = 0,
-    kPRStatePulling = 1,
-    kPRStateLoading = 2,
-    kPRStateHitTheEnd = 3
+    kPRStateNormal = 0,         //正常状态
+    kPRStatePulling = 1,        //拉动中
+    kPRStateLoading = 2,        //加载中
+    kPRStateHitTheEnd = 3       //遇到底部
 } PRStatue;
 
 @interface LoadingView : UIView
 {
-    UILabel *_stateLabel;                       /** < 状态标签*/
-    UILabel *_dateLabel;                        /** < 时间标签*/
-    UIImageView *_arrowView;                    /** < 箭头视图*/
-    UIActivityIndicatorView *_activityView;     /** < 加载中*/
-    CALayer *_arrow;                            /** < 箭头层*/
+    UILabel *_stateLabel;
+    UILabel *_dateLabel;
+    UIImageView *_arrowView;
+    UIActivityIndicatorView *_activityView;
+    CALayer *_arrow;
     
-    BOOL _loading;                              /** < 是否加载*/
+    BOOL _loading;
 }
 
-@property (nonatomic, getter = isLoading) BOOL loading;
-@property (nonatomic, getter = isAtTop) BOOL atTop;
+@property (nonatomic, getter = isLoading) BOOL  loading;
+@property (nonatomic, getter = isAtTop) BOOL    atTop;
 @property (nonatomic) PRStatue state;
 
 - (id)initWithFrame:(CGRect)frame atTop:(BOOL)top;
-
 - (void)updateRefreshDate:(NSDate *)date;
 
 @end
@@ -65,34 +64,14 @@ typedef enum {
 @property (nonatomic,getter = isHeaderOnly) BOOL headerOnly;
 @property (nonatomic,getter = isNeedHeader) BOOL needHeader;
 
-/**
- * @brief   初始化
- */
+//init
 - (id)initWithFrame:(CGRect)frame pullingDelegate:(id<PullingRefreshTableViewDelegate>)aPullingDelegate;
 
-/**
- * @brief   表格滑动
- */
+
 - (void)tableViewDidScroll:(UIScrollView *)scrollView;
-
-/**
- * @brief   表格停止拖动
- */
 - (void)tableViewDidEndDragging:(UIScrollView *)scrollView;
-
-/**
- * @brief   表格结束加载
- */
 - (void)tableViewDidFinishedLoading;
-
-/**
- * @brief   表格结束加载并显示相应的信息
- */
 - (void)tableViewDidFinishedLoadingWithMessage:(NSString *)msg;
-
-/**
- * @brief   进行刷新
- */
 - (void)launchRefreshing;
 
 @end

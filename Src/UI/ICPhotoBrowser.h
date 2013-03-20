@@ -13,9 +13,9 @@
 #import "ICCaptionView.h"
 
 #if 0 // Set to 1 to enable debug logging
-#define MWLog(x, ...) NSLog(x, ## __VA_ARGS__);
+#define ICLog(x, ...) NSLog(x, ## __VA_ARGS__);
 #else
-#define MWLog(x, ...)
+#define ICLog(x, ...)
 #endif
 
 @class ICPhotoBrowser;

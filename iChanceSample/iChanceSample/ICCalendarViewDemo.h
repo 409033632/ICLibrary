@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 #import "ICCalendarView.h"
 
-@interface ICCalendarViewDemo : ICViewController <ICCalendarViewDelegate>
+@interface ICCalendarViewDemo : ICBaseViewController <ICCalendarViewDelegate>
 
 @end

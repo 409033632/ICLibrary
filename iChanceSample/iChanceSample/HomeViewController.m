@@ -9,7 +9,6 @@
 #import "HomeViewController.h"
 #import "ICUIViewController.h"
 #import "SVProgressHUD.h"
-#import "ICAnimationViewController.h"
 #import "ICNetworkViewController.h"
 
 
@@ -117,9 +116,9 @@
     
     if (indexPath.row == 2) {
         //Animation
-        ICAnimationViewController *animationViewController = [[ICAnimationViewController alloc] init];
-        [self.navigationController pushViewController:animationViewController animated:YES];
-        [animationViewController release];
+//        ICAnimationViewController *animationViewController = [[ICAnimationViewController alloc] init];
+//        [self.navigationController pushViewController:animationViewController animated:YES];
+//        [animationViewController release];
         
     }
     

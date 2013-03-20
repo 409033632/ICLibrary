@@ -10,7 +10,7 @@
 #import "ICZoomableImageViewDemo.h"
 #import "ICLabelDemo.h"
 #import "ICCalendarViewDemo.h"
-
+#import "ICPullTableViewController.h"
 
 @interface ICUIViewController ()
 
@@ -51,7 +51,8 @@
     self.navigationItem.title = @"UI";
     
     //init data source
-    _dataSource = [[NSArray alloc] initWithObjects:@"ICZoomableImageView",@"ICLabel",@"ICCalendar",nil];
+    _dataSource = [[NSArray alloc] initWithObjects:@"ICZoomableImageView",@"ICLabel",@"ICCalendar",
+                   @"PullTable",nil];
     
     
     //add table
@@ -117,6 +118,13 @@
         ICCalendarViewDemo *calendarViewDemo = [[ICCalendarViewDemo alloc] init];
         [self.navigationController pushViewController:calendarViewDemo animated:YES];
         [calendarViewDemo release];
+    }
+    
+    if (indexPath.row == 3) {
+        //PullTable
+        ICPullTableViewController *pullTable = [[ICPullTableViewController alloc] init];
+        [self.navigationController pushViewController:pullTable animated:YES];
+        [pullTable release];
     }
 }
 

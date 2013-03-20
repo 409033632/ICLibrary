@@ -6,10 +6,12 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 #import "AFJSONRequestOperation.h"
 #import "AFHTTPClient.h"
+#import "ICNetWorkManager.h"
 
-@interface ICNetworkViewController : ICViewController
+
+@interface ICNetworkViewController : ICBaseViewController
 
 @end

@@ -6,10 +6,10 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 #import "PullingRefreshTableView.h"
 
-@interface ICTableViewController : ICViewController <UITableViewDelegate,UITableViewDataSource,
+@interface ICTableViewController : ICBaseViewController <UITableViewDelegate,UITableViewDataSource,
     PullingRefreshTableViewDelegate,UIScrollViewDelegate>
 {
     PullingRefreshTableView *_pullingRefreshTableView;

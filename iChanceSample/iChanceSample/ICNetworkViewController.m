@@ -46,25 +46,14 @@
 
     self.title = NSLocalizedString(@"HelloKey", @"12121");   
 
-    //Http get
-//    NSString *inputString = [NSString stringWithFormat:@"http://222.73.126.185:81/interface/Mobile/MobileService.asmx/ProductList?input=%@",[CommonHelper userRegisterWithUserName:@"Fox" password:@"123456" mobile:@"13758125066"]];
-//    
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:inputString]];
-//    AFXMLRequestOperation *operation = [AFXMLRequestOperation XMLParserRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSXMLParser *XMLParser) {
-//        XMLParser.delegate = self;
-//        [XMLParser parse];
-//        NSLog(@"sucess");
-//        
-//    } failure:nil];
-//    [operation start];
     
-    NSString *testXMLString = @"<items><item id=\"0001\" type=\"donut\"><name>Cake</name><ppu>0.55</ppu><batters><batter id=\"1001\">Regular</batter><batter id=\"1002\">Chocolate</batter><batter id=\"1003\">Blueberry</batter></batters><topping id=\"5001\">None</topping><topping id=\"5002\">Glazed</topping><topping id=\"5005\">Sugar</topping></item></items>";
-    // Parse the XML into a dictionary
-    NSError *parseError = nil;
-    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLString:testXMLString error:&parseError];
     
-    // Print the dictionary
-    NSLog(@"%@", xmlDictionary);
+    [[ICNetWorkManager shareInstance] startHttpSynchronousRequest:@"http://kbpad.hbjt.com.cn/apiNew?method=getNewsByPage&updatedDate=1359349486&channelId=4&pageSize=24&pageIndex=1&deviceType=1" targetView:self.view loadingText:@"加载中啊" didFinishRequest:^(ASIHTTPRequest *request) {
+        NSLog(@"%@",request.responseString);
+    } didFailedRequest:^(ASIHTTPRequest *request) {
+         NSLog(@"%@",request.responseString);
+    }];
+    
     
     
     

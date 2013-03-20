@@ -6,11 +6,10 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
 #import "ICZoomableImageView.h"
 
 
-@interface ICZoomableImageViewDemo : ICViewController <ICZoomableImageViewDelegate>
+@interface ICZoomableImageViewDemo : UIViewController <ICZoomableImageViewDelegate>
 {
 }
 @end

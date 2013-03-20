@@ -6,9 +6,9 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 
-@interface ICUIViewController : ICViewController <UITableViewDelegate,UITableViewDataSource>
+@interface ICUIViewController : ICBaseViewController <UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
     

@@ -6,10 +6,10 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 #import "FTAnimation.h"
 
-@interface AnimationDemo : ICViewController
+@interface AnimationDemo : ICBaseViewController
 {
     UIImageView *_animationImage;
 }

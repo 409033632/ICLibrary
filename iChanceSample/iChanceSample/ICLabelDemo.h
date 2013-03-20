@@ -6,8 +6,8 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "ICViewController.h"
+#import "ICBaseViewController.h"
 
-@interface ICLabelDemo : ICViewController
+@interface ICLabelDemo : ICBaseViewController
 
 @end
